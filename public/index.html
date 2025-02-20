@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pessoas e Transações - Sistema de Gerenciamento Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sistema de Gerenciamento Financeiro</h1>
+  <!-- Cabeçalho da página, exibido como o título principal -->
+
+  <!-- Formulário para adicionar uma nova pessoa -->
+  <form id="formPessoa">
+    <!-- Formulário que envia as informações sobre a pessoa -->
+    <input type="text" id="nome" placeholder="Nome" required>
+    <!-- Campo de texto para o nome da pessoa -->
+    <input type="number" id="idade" placeholder="Idade" required>
+    <!-- Campo numérico para a idade da pessoa -->
+    <button type="submit">Adicionar Pessoa</button>
+    <!-- Botão para enviar os dados e adicionar a pessoa -->
+  </form>
+
+  <!-- Formulário para adicionar uma nova transação -->
+  <form id="formTransacao">
+    <!-- Formulário que envia as informações sobre a transação -->
+    <select id="pessoaId" required>
+      <!-- Seletor (dropdown) para escolher a pessoa associada à transação -->
+      <option value="">Selecione uma Pessoa</option>
+      <!-- Opção inicial para selecionar uma pessoa -->
+    </select>
+    <input type="text" id="descricao" placeholder="Descrição" required>
+    <!-- Campo de texto para a descrição da transação -->
+    <input type="number" id="valor" placeholder="Valor" required>
+    <!-- Campo numérico para o valor da transação -->
+    <select id="tipo" required>
+      <!-- Seletor para escolher o tipo da transação (receita ou despesa) -->
+      <option value="despesa">Despesa</option>
+      <option value="receita">Receita</option>
+    </select>
+    <button type="submit">Adicionar Transação</button>
+    <!-- Botão para enviar os dados e adicionar a transação -->
+  </form>
+
+  <!-- Seção para listar as pessoas cadastradas -->
+  <div id="listaPessoas">
+    <!-- As pessoas cadastradas serão listadas aqui dinamicamente -->
+  </div>
+
+  <!-- Seção para mostrar os totais de receitas, despesas e saldo -->
+  <div id="totais">
+    <!-- As informações de totais de receitas, despesas e saldo serão exibidas aqui -->
+  </div>
+
+  <div id="totaisResidenciais">
+    <h3>Totais Gerais</h3>
+    <!-- Título para a seção de totais -->
+    <p>Receitas Totais: R$ <span id="totalReceitas">0.00</span></p>
+    <!-- Exibe o total de receitas -->
+    <p>Despesas Totais: R$ <span id="totalDespesas">0.00</span></p>
+    <!-- Exibe o total de despesas -->
+    <p>Saldo Total: R$ <span id="totalSaldo">0.00</span></p>
+    <!-- Exibe o saldo total (receitas - despesas) -->
+  </div>  
+
+  <script src="script.js"></script>
+  <!-- Vincula o arquivo JavaScript, que irá adicionar funcionalidades interativas à página -->
+</body>
+</html>

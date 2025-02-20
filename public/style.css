@@ -1,0 +1,123 @@
+/* Reseta as margens e os preenchimentos de todos os elementos, e define a caixa de modelo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Define o modelo de box-sizing como border-box para facilitar o cálculo de largura e altura */
+  font-family: 'Arial', sans-serif; /* Define a fonte padrão da página */
+}
+
+/* Estilo global para o corpo da página */
+body {
+  background-color: #f7f7f7; /* Cor de fundo clara para o corpo */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estilo para os cabeçalhos principais */
+h1, h3 {
+  text-align: center; /* Alinha o texto ao centro */
+  color: #333; /* Cor do texto em um tom escuro */
+}
+
+/* Contêiner principal da página */
+.container {
+  width: 100%; /* A largura do contêiner será 100% do tamanho disponível */
+  max-width: 1200px; /* Define a largura máxima para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estilo para a seção de totais residenciais */
+#totaisResidenciais {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo para os parágrafos dentro da seção 'totaisResidenciais' */
+#totaisResidenciais p {
+  font-size: 1.2rem; /* Tamanho de fonte maior */
+  color: #555; /* Cor do texto em cinza escuro */
+}
+
+/* Estilo para os formulários de pessoa e transação */
+#formPessoa, #formTransacao {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo para campos de entrada (input), seletores (select) e botões (button) */
+input, select, button {
+  width: 100%; /* Faz os elementos ocuparem toda a largura disponível */
+  padding: 12px; /* Espaçamento interno */
+  margin: 8px 0; /* Margem superior e inferior */
+  border-radius: 6px; /* Bordas arredondadas */
+  border: 1px solid #ddd; /* Borda com cor clara */
+}
+
+/* Estilo para os botões */
+button {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  cursor: pointer; /* Cursor como ponteiro, indicando que é clicável */
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+  background-color: #45a049; /* Cor de fundo um pouco mais escura ao passar o mouse */
+}
+
+/* Estilo para a lista de pessoas */
+#listaPessoas {
+  display: flex; /* Usa o modelo flexbox para organizar os itens */
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+  gap: 20px; /* Espaçamento entre os itens */
+  margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo para cada item da lista de pessoas */
+.pessoa {
+  background-color: #fff; /* Fundo branco */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  flex: 1 1 30%; /* Cada item ocupa 30% da largura, com flexibilidade */
+  min-width: 280px; /* Largura mínima */
+}
+
+/* Estilo para os parágrafos dentro dos itens da lista de pessoas */
+.pessoa p {
+  font-size: 1rem; /* Tamanho de fonte padrão */
+  color: #555; /* Cor do texto em cinza escuro */
+}
+
+/* Estilo para o botão de deletar */
+.deletar {
+  background-color: #f44336; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remove a borda padrão */
+  padding: 8px; /* Espaçamento interno */
+  border-radius: 6px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor como ponteiro */
+}
+
+/* Efeito de hover no botão de deletar */
+.deletar:hover {
+  background-color: #e53935; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Responsividade: ajustes para telas menores */
+@media (max-width: 768px) {
+  /* Ajusta o padding dos formulários em telas menores */
+  #totaisResidenciais, #formPessoa, #formTransacao {
+    padding: 15px; /* Reduz o padding para telas pequenas */
+  }
+
+  /* Organiza a lista de pessoas de forma vertical em telas pequenas */
+  #listaPessoas {
+    flex-direction: column; /* Organiza os itens em uma única coluna */
+  }
+}
