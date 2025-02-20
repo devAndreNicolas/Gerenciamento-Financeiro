@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": 1,
+    "descricao": "Teste de transação",
+    "valor": 200,
+    "tipo": "despesa",
+    "pessoaId": 1
+  }
+]
