@@ -5,8 +5,13 @@
 Este projeto é um sistema de gerenciamento financeiro que permite cadastrar pessoas e registrar suas transações financeiras (receitas e despesas). O sistema oferece uma interface web para interação do usuário e um backend para processamento e armazenamento de dados.
 
 ## Visualização do Projeto
+
+### Versão Desktop
 ![Screenshot do Sistema de Gerenciamento Financeiro](./img/desktop.png)
-![Screenshot do Sistema de Gerenciamento Financeiro](./img/mobile.png)
+### Versão Mobile
+<p align="center">
+  <img src="./img/mobile.png" alt="Screenshot da versão mobile do Sistema de Gerenciamento Financeiro" width="50%">
+</p>
 
 ## Funcionalidades
 
