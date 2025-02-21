@@ -4,7 +4,7 @@
   "description": "Sistema de controle de gastos residenciais",
   "main": "server.js",
   "scripts": {
-    "start": "node js/server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2"
